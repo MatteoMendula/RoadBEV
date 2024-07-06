@@ -2,6 +2,5 @@ bev_pred/
 checkpoints/
 models/__pycache__/
 preprocessed/
-requirements.txt
 utils/__pycache__/
 visualizations/
