@@ -16,9 +16,14 @@ class RSRD(Dataset):
         self.stereo = stereo
         self.down_scale = down_scale
 
-        self.calib_path = '/dataset/RSRD_calib/'  # path for calibration files
-        self.data_path = '/dataset/RSRD-dense/train/'     # path for the training set of RSRD-dense
-        preprocessed_path = './preprocessed/'  # path for preprocessed GT maps
+        # self.calib_path = '/dataset/RSRD_calib/'  # path for calibration files
+        self.calib_path = '/home/ubuntu/SplittingBev/RSRD_dev_toolkit/calibration_files/'  # path for calibration files
+
+        # self.data_path = '/dataset/RSRD-dense/train/'     # path for the training set of RSRD-dense
+        self.data_path = '/home/ubuntu/SplittingBev/RSRD-dense/train/'     # path for the training set of RSRD-dense
+        
+        # preprocessed_path = './preprocessed/'  # path for preprocessed GT maps
+        preprocessed_path = '/home/ubuntu/SplittingBev/RoadBEV/preprocessed/'  # path for preprocessed GT maps
 
         if self.training:
             self.load_dataset_names('./filenames/train/')
